@@ -1,7 +1,7 @@
-document.getElementById('test-button').addEventListener('click', function(){
-  const links = document.querySelectorAll('.titles a');
-  console.log('links:', links);
-});
+//document.getElementById('test-button').addEventListener('click', function(){
+//  const links = document.querySelectorAll('.titles a');
+//  console.log('links:', links);
+//});
 //kliknięciu guzika funkcja querySelectorAll znalazła wszystkie elementy pasujące do selektora .titles a czyli 10 arty.
 
 const titleClickHandler = function(event){
