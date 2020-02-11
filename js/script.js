@@ -19,9 +19,9 @@ const generateTitleLinks = function(){
     /*na podstawie tych informacji stwórz kod HTML linka i zapisz go do stałej,*/
     const linkHTML = '<li><a href="#'+ articleId + '"><span>' + articleTitle + '</span></a></li>';
 
-    console.log('co to articleTitle',articleTitle);
+    /*console.log('co to articleTitle',articleTitle);*/
     html = html + linkHTML;
-    console.log('co to articleId',articleId);
+    /*console.log('co to articleId',articleId);*/
   }
   /*wstaw stworzony kod HTML do listy linków w lewej kolumnie. */
 
@@ -33,7 +33,7 @@ generateTitleLinks();
 const titleClickHandler = function(event){
   event.preventDefault();
   const clickedElement = this;
-  console.log('Link was clicked!yes');
+  /*console.log('Link was clicked!yes');*/
 
   /*[DONE] remove class 'active' from all article links  */
   const activeLinks = document.querySelectorAll('.titles a.active');
@@ -55,18 +55,18 @@ const titleClickHandler = function(event){
   /* get 'href' attribute from the clicked link */
   const articleSelector = clickedElement.getAttribute('href');
 
-  console.log(articleSelector);
+  /*console.log(articleSelector);*/
 
   /* find the correct article using the selector (value of 'href' attribute) */
   const targetArticle = document.querySelector(articleSelector);
 
-  console.log('targetArticle',targetArticle);
+  /*console.log('targetArticle',targetArticle);*/
   /* add class 'active' to the correct article */
   targetArticle.classList.add('active');
 }
 
 const links = document.querySelectorAll('.titles a');
-console.log('co zawiera stala, links');
+/*console.log('co zawiera stala, links');*/
 
 for(let link of links){
   link.addEventListener('click', titleClickHandler);
