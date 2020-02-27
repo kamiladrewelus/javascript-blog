@@ -26,7 +26,7 @@ const generateTitleLinks = function(){
   /*wstaw stworzony kod HTML do listy linków w lewej kolumnie. */
 
   titleList.innerHTML = html;
-}
+};
 
 generateTitleLinks();
 
@@ -63,7 +63,7 @@ const titleClickHandler = function(event){
   /*console.log('targetArticle',targetArticle);*/
   /* add class 'active' to the correct article */
   targetArticle.classList.add('active');
-}
+};
 
 const links = document.querySelectorAll('.titles a');
 /*console.log('co zawiera stala, links');*/
